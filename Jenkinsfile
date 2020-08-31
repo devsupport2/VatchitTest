@@ -5,8 +5,11 @@ pipeline {
             steps {
                 dir("Upload") {
                     sh 'cd ~/'
+                    sh "pwd"
                     sh 'cd ..'
+                    sh "pwd"
                     sh 'cd ..'
+                    sh "pwd"
                     sh 'cd ..'
                     sh "pwd"
                     sh 'cd /home/Desktop/Upload'
