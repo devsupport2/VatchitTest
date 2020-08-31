@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                dir("~/Desktop/Upload") {
+                dir("Upload") {
                     sh 'echo "Hello you!" >> test.txt'
                 }
                 echo 'Hello world! Disco dandiya added' 
