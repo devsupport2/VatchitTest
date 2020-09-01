@@ -2,9 +2,21 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1') {
+        stage('Building Jicofo') {
             steps {
-                echo 'Hello world! Disco dandiya added' 
+                echo 'Building jicofo' 
+            }
+        }
+        stage('Creating debPackages') {
+            steps {
+                echo 'Starting command' 
+                sh 'dpkg-buildpackage -A -rfakeroot -us -uc'
+                sh 'cd ..'
+            }
+        }
+        stage('Moving deb files') {
+            steps {
+                echo 'Starting command'
             }
         }
     }
