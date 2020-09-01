@@ -10,8 +10,7 @@ pipeline {
         stage('Creating debPackages') {
             steps {
                 echo 'Starting command' 
-                sh 'dpkg-buildpackage -A -rfakeroot -us -uc'
-                sh 'cd ..'
+                sh '/resources/build_deb_package.sh'
             }
         }
         stage('Moving deb files') {
