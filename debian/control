@@ -1,11 +1,11 @@
 Source: jicofo
 Section: net
 Priority: extra
-Maintainer: Jitsi Team <dev@jitsi.org>
-Uploaders: Emil Ivov <emcho@jitsi.org>, Damian Minkov <damencho@jitsi.org>, Pawel Domas <pawel.domas@jitsi.org>
+Maintainer: Vatchit Team <info@ultrainfotech.net>
+Uploaders: Yuvraj Bhogle <devsupport2@ultrainfotech.net>
 Build-Depends: debhelper, java8-runtime-headless | java8-runtime | java11-runtime-headless | java11-runtime, maven
 Standards-Version: 3.9.3
-Homepage: https://jitsi.org/meet
+Homepage: https://vatchit.in
 
 Package: jicofo
 Architecture: all
