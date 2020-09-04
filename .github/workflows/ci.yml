@@ -31,6 +31,8 @@ jobs:
       run: mvn package -DskipTests -Dassembly.skipAssembly=false
     - name: Get deb helper
       run: sudo apt-get install debhelper dh-virtualenv
+    - name: Get Maven
+      run: sudo apt-get install maven
     - name: Build Debian package
       run: dpkg-buildpackage -A -rfakeroot -us -uc
 
