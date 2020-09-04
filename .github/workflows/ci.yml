@@ -38,5 +38,5 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: jicofo
-        path: ../jicofo_*
+        path: /home/runner/work/VatchitTest/jicofo_*
 
