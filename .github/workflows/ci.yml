@@ -36,5 +36,5 @@ jobs:
     - name: Build Debian package
       run: dpkg-buildpackage -A -rfakeroot -us -uc
     - name: get file path
-      run: pwd
+      run: mv ../jicofo_1.0-0-g9fc93ed-1_all.deb /home/runner/work/VatchitTest/VatchitTest/deb
 
