@@ -35,6 +35,8 @@ jobs:
       run: sudo apt-get install maven
     - name: Build Debian package
       run: dpkg-buildpackage -A -rfakeroot -us -uc
-    - name: get file path
-      run: mv ../jicofo_1.0-0-g9fc93ed-1_all.deb /home/runner/work/VatchitTest/VatchitTest/deb
+    - uses: actions/upload-artifact@v2
+      with:
+        name: jicofo
+        path: ../jicofo_*
 
